@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.Button {
+  background-color: White;
+  padding: 15px 30px;
+  position:relative;
+  margin: 0 auto;
+  top: -20px;
+  left: 0px;
+  right: -200px;
+  bottom: -191px;
+}
+
+logo { 
+ position:relative;
+ top: 22px;
+ left: 520px;
+ right: -200px;
+ bottom: -191px;
+
+}
+
+body {
+  background-color: black;
+  color: white
+}
+
+p {
+  color: white;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  margin-right: 50px;
+  margin-left: 50px;                                   
+}
+
+div {
+  margin: auto;
+}
+</style>
+
+<title>randomimages</title>
+
+</head>
+<body>
+
+<a href="index.htm"><img src="images/random images logo.png" width="200" hight"100"></a>
+<a href="blog.htm" class="Button">BLOG</a>
+<a href="about.htm" class="Button">ABOUT</a>
+<a href="images.htm" class="Button">RANDOM IMAGES</a>
+
+<h1 class="h" align="center" >Random Image:</h1>
+
+<div align="center">
+<script type="text/javascript">
+<!--
+ var imlocation = "images/";
+ var currentdate = 0;
+ var image_number = 0;
+ function ImageArray (n) {
+   this.length = n;
+   for (var i =1; i <= n; i++) {
+     this[i] = ' '
+   }
+ }
+ image = new ImageArray(6)
+ image[0] = 'black.jfif'
+ image[1] = 'car with sausages.jpg'
+ image[2] = 'duck and horse combined.jpg'
+ image[3] = 'man riding chicken.jpg'
+ image[4] = 'pigeon wearing cowboy hat.jpg'
+ image[5] = 'dog.jpg'
+ var rand = 60/image.length
+ function randomimage() {
+ 	currentdate = new Date()
+ 	image_number = currentdate.getSeconds()
+ 	image_number = Math.floor(image_number/rand)
+ 	return(image[image_number])
+ }
+ document.write("<img src='" + imlocation + randomimage()+ "'>");
+//-->
+</script>
+</div>
+  
+</body>
+</html>
